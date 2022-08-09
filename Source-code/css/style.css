@@ -1,0 +1,88 @@
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+	background: #242424;
+	overflow:hidden;
+}
+#bgchar {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+	right:-5%;
+    background-image: url('../images/image_2022-08-04_235722868.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    z-index: 1;
+	transition:2s;
+}
+#bgchar.right {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+	right:-2%;
+}
+#desc {
+	display:table;
+	table-layout: fixed;
+    color: #936965;
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    left: 15%;
+    box-sizing: border-box;
+    z-index: 2;
+	transition:2s;
+}
+#desc.show{
+    height: 100%;
+	left:15%;
+}
+.content {
+	display:table-cell;
+    vertical-align: middle;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    z-index: 2;
+    text-align: center;
+}
+.name {
+    width: 100%;
+    height: 15%;
+    max-height: 123px;
+    background: url('../images/logo.png') no-repeat;
+    background-size: contain;
+    background-position: center;
+	margin-bottom:10px;
+}
+	#desc1{
+		height:15%;
+		max-height:300px;
+    	font-family: 'Raleway', sans-serif;
+    	font-size: 13px;
+		box-sizing: border-box;
+		text-align:center;
+		overflow-y:scroll;
+  		scrollbar-face-color: #ffb8ac;
+  		scrollbar-track-color: #f2f2f2;
+ 		scrollbar-arrow-color: #ffb8ac;
+  		scrollbar-shadow-color: #f2f2f2;
+		transition:2s;
+	}
+	#desc1.show{
+		height:20%;
+    	font-family: 'Raleway', sans-serif;
+    	font-size: 13px;
+		box-sizing: border-box;
+		margin:10px 10px;
+		padding:20px 20px;
+		text-align:center;
+		overflow-y:scroll;
+	}
+	.descimg{
+		max-width:583px;
+	}
